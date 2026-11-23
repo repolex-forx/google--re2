@@ -123,6 +123,16 @@
       ],
       "ast": [
         "aggregate/ast/4286fd5bd9412a92b1392775034a6a197da8c36c/chunk-001.nq.gz"
+      ],
+      "lsp": "aggregate/lsp/4286fd5bd9412a92b1392775034a6a197da8c36c.nq.gz",
+      "dependencies": [
+        {
+          "packageName": "lib.es5.d.ts",
+          "ecosystem": "NPM",
+          "githubOrg": "microsoft",
+          "githubRepo": "TypeScript",
+          "source": "stdlib:typescript_lib"
+        }
       ]
     }
   ],

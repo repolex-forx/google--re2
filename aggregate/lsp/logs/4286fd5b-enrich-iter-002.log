@@ -1,0 +1,24 @@
+[2026-11-23T05:51:37Z] === ENRICH ITERATION 2 START | repo=google/re2 sha=4286fd5b ===
+[2026-11-23T05:51:37Z] [iter=2] PHASE START: enrich repo=google/re2 sha=4286fd5b runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/4286fd5b-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/4286fd5bd9412a92b1392775034a6a197da8c36c.nq.gz
+[2026-11-23T05:51:37Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-11-23T05:51:47Z] [iter=2] AST store loaded triples=1241046 load_secs=10 mem_mb=843 MB
+[2026-11-23T05:51:47Z] [iter=2] Step 2: Finding LSP targets mem_mb=843 MB
+[2026-11-23T05:51:48Z] [iter=2] LSP targets found call_sites=8477 imports=350 extends=46 implements=0 secs=1
+[2026-11-23T05:51:49Z] [iter=2] Loaded checkpoint partial graph triples=34880
+[2026-11-23T05:51:49Z] [iter=2] Primed enclosing-def cache from persisted triples entries=387
+[2026-11-23T05:51:50Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=843 MB
+[2026-11-23T05:51:55Z] [iter=2] Position index built positions=75082 nodes_with_types=92546 secs=5 mem_mb=843 MB
+[2026-11-23T05:51:55Z] [iter=2] Step 3: Starting LSP resolution mem_mb=843 MB already_completed_types=[] already_completed_files=51
+[2026-11-23T05:51:55Z] [iter=2] Resolving target type target_type=call_site count=8477
+[2026-11-23T05:52:14Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=0.6 files_done=3 resolved=43 errors=0 current=re2/mimics_pcre.cc
+[2026-11-23T05:52:53Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=1.3 files_done=12 resolved=148 errors=0 current=re2/prefilter.h
+[2026-11-23T05:53:16Z] [iter=2] Target type resolved target_type=call_site resolved=178 errors=0 secs=81 mem_mb=843 MB
+[2026-11-23T05:53:16Z] [iter=2] Resolving target type target_type=import_statement count=350
+[2026-11-23T05:53:23Z] [iter=2] Target type resolved target_type=import_statement resolved=2 errors=0 secs=8 mem_mb=843 MB
+[2026-11-23T05:53:23Z] [iter=2] Resolving target type target_type=extends_clause count=46
+[2026-11-23T05:53:24Z] [iter=2] HEARTBEAT target_type=extends_clause elapsed_min=1.8 files_done=2 resolved=19 errors=0 current=re2/mimics_pcre.cc
+[2026-11-23T05:53:27Z] [iter=2] Target type resolved target_type=extends_clause resolved=23 errors=0 secs=4 mem_mb=843 MB
+[2026-11-23T06:01:56Z] [iter=2] Step 5: Writing final enrichment file triples=55976
+[2026-11-23T06:01:57Z] [iter=2] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/4286fd5bd9412a92b1392775034a6a197da8c36c.nq.gz size_kb=1042
+[2026-11-23T06:01:57Z] [iter=2] Checkpoint cleared (enrichment complete)
+[2026-11-23T06:01:57Z] [iter=2] PHASE END: enrich elapsed_s=620 elapsed_min=10.3 total_triples=55976
