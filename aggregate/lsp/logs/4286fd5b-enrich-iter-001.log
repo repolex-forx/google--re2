@@ -1,0 +1,33 @@
+[2026-11-23T05:19:25Z] === ENRICH ITERATION 1 START | repo=google/re2 sha=4286fd5b ===
+[2026-11-23T05:19:25Z] [iter=1] PHASE START: enrich repo=google/re2 sha=4286fd5b runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/4286fd5b-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/4286fd5bd9412a92b1392775034a6a197da8c36c.nq.gz
+[2026-11-23T05:19:25Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-11-23T05:19:34Z] [iter=1] AST store loaded triples=1241046 load_secs=9 mem_mb=843 MB
+[2026-11-23T05:19:34Z] [iter=1] Step 2: Finding LSP targets mem_mb=843 MB
+[2026-11-23T05:19:36Z] [iter=1] LSP targets found call_sites=8477 imports=350 extends=46 implements=0 secs=2
+[2026-11-23T05:19:37Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=843 MB
+[2026-11-23T05:19:44Z] [iter=1] Position index built positions=75082 nodes_with_types=92546 secs=7 mem_mb=843 MB
+[2026-11-23T05:19:44Z] [iter=1] Step 3: Starting LSP resolution mem_mb=843 MB already_completed_types=[] already_completed_files=0
+[2026-11-23T05:19:44Z] [iter=1] Resolving target type target_type=call_site count=8477
+[2026-11-23T05:20:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.9 files_done=2 resolved=164 errors=0 current=re2/unicode.py
+[2026-11-23T05:21:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.6 files_done=4 resolved=351 errors=0 current=re2/make_unicode_casefold.py
+[2026-11-23T05:22:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.3 files_done=10 resolved=649 errors=0 current=re2/testing/regexp_benchmark.cc
+[2026-11-23T05:27:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.0 files_done=11 resolved=1257 errors=0 current=re2/testing/re2_test.cc
+[2026-11-23T05:28:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.4 files_done=13 resolved=1516 errors=0 current=re2/compile.cc
+[2026-11-23T05:29:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.5 files_done=14 resolved=1663 errors=0 current=re2/testing/parse_test.cc
+[2026-11-23T05:31:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.1 files_done=17 resolved=1881 errors=0 current=re2/re2.cc
+[2026-11-23T05:33:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.1 files_done=18 resolved=2153 errors=0 current=re2/prefilter.cc
+[2026-11-23T05:34:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.3 files_done=19 resolved=2301 errors=0 current=re2/testing/charclass_test.cc
+[2026-11-23T05:37:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.2 files_done=21 resolved=2676 errors=0 current=re2/testing/required_prefix_test.cc
+[2026-11-23T05:38:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.9 files_done=26 resolved=2749 errors=0 current=re2/testing/backtrack.cc
+[2026-11-23T05:39:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.2 files_done=28 resolved=2917 errors=0 current=re2/nfa.cc
+[2026-11-23T05:40:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.5 files_done=30 resolved=3097 errors=0 current=re2/testing/filtered_re2_test.cc
+[2026-11-23T05:41:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.4 files_done=32 resolved=3220 errors=0 current=re2/parse.cc
+[2026-11-23T05:45:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.6 files_done=33 resolved=3652 errors=0 current=re2/testing/simplify_test.cc
+[2026-11-23T05:45:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.3 files_done=36 resolved=3721 errors=0 current=re2/fuzzing/re2_fuzzer.cc
+[2026-11-23T05:46:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.2 files_done=41 resolved=3824 errors=0 current=re2/sparse_set.h
+[2026-11-23T05:48:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.2 files_done=44 resolved=4082 errors=0 current=re2/bitmap256.h
+[2026-11-23T05:49:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.7 files_done=49 resolved=4152 errors=0 current=re2/testing/random_test.cc
+[2026-11-23T05:49:26Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=30.0 files_completed=51 new_files_this_iter=51 mem_mb=843 MB
+[2026-11-23T05:49:26Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/4286fd5bd9412a92b1392775034a6a197da8c36c.nq.gz triples=34880
+[2026-11-23T05:49:26Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-11-23T05:49:26Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=1801 elapsed_min=30.0 files_completed=51
