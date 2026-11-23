@@ -1,0 +1,11 @@
+{
+  "org": "google",
+  "repo": "re2",
+  "versions": [
+    {
+      "commit": "4286fd5bd9412a92b1392775034a6a197da8c36c",
+      "tag": "abseil.old",
+      "parsed_at": "2026-11-23T06:04:39.455399+00:00"
+    }
+  ]
+}
